@@ -1,0 +1,9 @@
+# Basic-Python-Projects
+
+## For Calculator app 
+The calculator() function contains a while loop that continues to prompt the user for input until the user types 'quit' at any prompt. The print() function displays a message telling the user how to exit the program.
+The next three lines prompt the user to enter the first number, second number, and operator for the arithmetic operation. The input() function is used to get input from the user, and the input is stored in the num1, num2, and operator variables, respectively. If the user types 'quit' at any of these prompts, the break statement is used to exit the while loop and end the program.
+The try block attempts to convert the user input for num1 and num2 into floating-point numbers using the float() function. If the user enters a non-numeric value (e.g. a string), the float() function will raise a ValueError exception. The except block catches this exception and displays an error message using the print() function. The continue statement is used to skip the remaining code in the while loop and start the loop over again.
+Once the user input has been successfully converted to numeric values, the program checks the operator variable to determine which arithmetic operation to perform. If the operator is '+', '-', '*', or '/', the corresponding operation is performed and the result is stored in the result variable. If the operator is not one of these four options, the program displays an error message and starts the while loop over again.
+If the user selects the division operator ('/'), the program also checks if the second number is zero. Dividing by zero is not allowed in arithmetic, so the program displays an error message and starts the while loop over again.
+Finally, the program displays the arithmetic operation and the result using the print() function, and adds a newline character at the end to make the output easier to read.
